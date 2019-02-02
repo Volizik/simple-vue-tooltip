@@ -10,16 +10,18 @@ import tooltip from '@volizik/simple-vue-tooltip'
 
 Vue.directive(tooltip)
 ```
+* Add styles:
+```
+<style lang="scss">
+@import '~@volizik/simple-vue-tooltip/styles/tooltip';
+...
+</style>
+```
 * Usage
 ```
 <button v-tooltip.right.bottom="I am your tooltip">Hover me!</button>
 ```
-* Options: 
-1) left
-2) right
-3) bottom
-4) top
-
+* Options: left | right | bottom | top
 * Shown only on hover
  
 
