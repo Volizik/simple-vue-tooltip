@@ -1,6 +1,6 @@
 {
   "name": "@volizik/simple-vue-tooltip",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Simple tooltips directive for Vue.js",
   "main": "index.js",
   "files": [
@@ -10,6 +10,10 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volizik/simple-vue-tooltip"
   },
   "keywords": ["tooltip", "vue", "vue-tooltip", "directive"],
   "author": "Volizik",
