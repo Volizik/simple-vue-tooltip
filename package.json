@@ -1,0 +1,17 @@
+{
+  "name": "@volizik/simple-vue-tooltip",
+  "version": "1.0.5",
+  "description": "Simple tooltips directive for Vue.js",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "styles/tooltip.scss",
+    "TooltipBuilder.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["tooltip", "vue", "vue-tooltip", "directive"],
+  "author": "Volizik",
+  "license": "ISC"
+}

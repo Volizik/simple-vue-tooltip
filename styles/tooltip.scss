@@ -1,0 +1,103 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  &:before,
+  &:after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    top: 100%;
+  }
+  &:before {
+    border-color: black;
+  }
+  &:after {
+    border-color: white;
+  }
+  &-top {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 10px);
+    &:before,
+    &:after {
+      top: 100%;
+      bottom: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:before {
+      border-width: 6px 7px 0 7px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    &:after {
+      border-width: 5px 5px 0 5px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+  &-bottom {
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 10px);
+    bottom: auto;
+    &:before,
+    &:after {
+      top: auto;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:before {
+      border-width: 0 7px 6px 7px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    &:after {
+      border-width: 0 5px 5px 5px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+  &-left {
+    left: 0;
+    right: auto;
+    transform: translateX(0);
+    &:before,
+    &:after {
+      right: auto;
+      transform: translateX(0);
+    }
+    &:before {
+      left: 6px;
+    }
+    &:after {
+      left: 8px;
+    }
+  }
+  &-right {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+    &:before,
+    &:after {
+      left: auto;
+      transform: translateX(0);
+    }
+    &:before {
+      right: 6px;
+    }
+    &:after {
+      right: 8px;
+    }
+  }
+}
